@@ -63,13 +63,13 @@
                 var thismeter = $('div[data-meter="'+thisid+'"]');
                     if (total < 8) {
                    thismeter.removeClass();
-                   thismeter.addClass('weak').attr("data-info", "weak").html('weak');
+                   thismeter.addClass('weak').attr("data-info", "min-8").html('weak');
                 } else if (total < 10){
                     thismeter.removeClass();
-                   thismeter.addClass('weak').attr('data-info', 'upperlowerdigit').html('weak');
+                   thismeter.addClass('weak').attr('data-info', 'alphanum').html('weak');
                 } else if(total == 10){
                     thismeter.removeClass();
-                   thismeter.addClass('medium').attr('data-info', 'upperlowerdigit').html('medium');
+                   thismeter.addClass('medium').attr('data-info', 'medium').html('medium');
                 } else {
                      thismeter.removeClass();
                    thismeter.addClass('strong').attr('data-info', 'strong').html('strong');
